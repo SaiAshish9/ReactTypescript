@@ -61,7 +61,7 @@ export default function App(): JSX.Element {
             <div style={{ textDecoration: i.completed && "line-through" }}>
               {i.text}
             </div>
-            <button onClick={() => completeTodo(k)} type="button">
+            <button onClick={():void => completeTodo(k)} type="button">
               {i.completed ? "incomplete" : "complete"}{" "}
             </button>
 
